@@ -161,18 +161,18 @@ export const NuevoPaciente = () => {
             <Toast ref={toast}></Toast>
             <div className="col-12 md:col-12">
                 <div className="card p-fluid">
-                    <h5>Registrar paciente nuevo</h5>
+                    <h5>Registrar estudiante nuevo</h5>
                     <div className="grid">
                         <div className="col-12 md:col-6">
                             <div className="field">
                                 <label htmlFor="nombresPaciente">Nombres del paciente</label>
-                                <InputText id="nombres" name="nombres" value={paciente.nombres} onChange={(e) => setPaciente({ ...paciente, nombres: e.target.value })} placeholder="Escriba los nombres del paciente" />
+                                <InputText id="nombres" name="nombres" value={paciente.nombres} onChange={(e) => setPaciente({ ...paciente, nombres: e.target.value })} placeholder="Escriba los nombres del estudiante" />
                             </div>
                         </div>
                         <div className="col-12 md:col-6">
                             <div className="field">
-                                <label htmlFor="apellidosPaciente">Apellidos del paciente</label>
-                                <InputText id="apellidos" name="apellidos" value={paciente.apellidos} onChange={(e) => setPaciente({ ...paciente, apellidos: e.target.value })} placeholder="Escriba los apellidos del paciente" />
+                                <label htmlFor="apellidosPaciente">Apellidos del estudiante</label>
+                                <InputText id="apellidos" name="apellidos" value={paciente.apellidos} onChange={(e) => setPaciente({ ...paciente, apellidos: e.target.value })} placeholder="Escriba los apellidos del estudiante" />
                             </div>
                         </div>
 
@@ -180,7 +180,7 @@ export const NuevoPaciente = () => {
                     <div className="grid">
                         <div className="col-12 md:col-4">
                             <div className="field">
-                                <label htmlFor="fecha_nacimiento">Fecha de nacimiento del paciente</label>
+                                <label htmlFor="fecha_nacimiento">Fecha de nacimiento del estudiante</label>
                                 <Calendar
                                     id="fecha_nacimiento"
                                     name="fecha_nacimiento"
@@ -198,14 +198,14 @@ export const NuevoPaciente = () => {
 
                         <div className="col-12 md:col-4">
                             <div className="field">
-                                <label htmlFor="sexo">Genero del paciente</label>
+                                <label htmlFor="sexo">Genero del estudiante</label>
                                 <Dropdown id="categoria" value={paciente.sexo} onChange={(e) => setPaciente({ ...paciente, sexo: e.target.value })} options={sexoDropdown} placeholder="Seleccione un genero" />
                             </div>
                         </div>
                         <div className="col-12 md:col-4">
                             <div className="field">
-                                <label htmlFor="telefono">Telefono del paciente</label>
-                                <InputNumber inputId="telefono" value={paciente.telefono} onValueChange={(e) => setPaciente({ ...paciente, telefono: e.target.value })} useGrouping={false} placeholder="Escriba el telefono del paciente" />
+                                <label htmlFor="telefono">Telefono del estudiante</label>
+                                <InputNumber inputId="telefono" value={paciente.telefono} onValueChange={(e) => setPaciente({ ...paciente, telefono: e.target.value })} useGrouping={false} placeholder="Escriba el telefono del estudiante" />
                             </div>
                         </div>
                     </div>
@@ -213,13 +213,13 @@ export const NuevoPaciente = () => {
                         <div className="col-12 md:col-6">
                             <div className="field">
                                 <label htmlFor="ci">Documento de identidad y lugar expedido</label>
-                                <InputText id="ci" name="ci" value={paciente.ci} onChange={(e) => setPaciente({ ...paciente, ci: e.target.value })} placeholder="Escriba el carnet de identidad del paciente" />
+                                <InputText id="ci" name="ci" value={paciente.ci} onChange={(e) => setPaciente({ ...paciente, ci: e.target.value })} placeholder="Escriba el carnet de identidad del estudiante" />
                             </div>
                         </div>
                         <div className="col-12 md:col-6">
                             <div className="field">
-                                <label htmlFor="correo_electronico">Correo electronico del paciente</label>
-                                <InputText id="correo_electronico" name="correo_electronico" value={paciente.correo_electronico} onChange={(e) => setPaciente({ ...paciente, correo_electronico: e.target.value })} placeholder="Escriba el correo electronico del paciente" />
+                                <label htmlFor="correo_electronico">Correo electronico del estudiante</label>
+                                <InputText id="correo_electronico" name="correo_electronico" value={paciente.correo_electronico} onChange={(e) => setPaciente({ ...paciente, correo_electronico: e.target.value })} placeholder="Escriba el correo electronico del estudiante" />
                             </div>
                         </div>
                     </div>
@@ -269,7 +269,7 @@ export const NuevoPaciente = () => {
                 <div className='card p-fluid'>
                     <div className="col-12 md:col-12">
                         <div className="field">
-                            <h5 htmlFor="direccion">Genera el usuario del paciente</h5>
+                            <h5 htmlFor="direccion">Genera el usuario del estudiante</h5>
                         </div>
                         <div className="grid">
                             <div className="col-12 md:col-4">
