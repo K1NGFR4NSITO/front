@@ -44,13 +44,13 @@ const Dashboard = () => {
                 >
                     <div className="mx-4 md:mx-8 mt-0 md:mt-4 mb-8">
                         <h1 className="text-7xl font-light text-white line-height-2">
-                            <span className="font-bold block">CLINICA DE SALUD INTEGRAL</span>La Paz - Bolivia
+                            <span className="font-bold block">COLEGIO SANTA ANA</span>La Paz - Bolivia
                         </h1>
                         
 
                     </div>
                     <div className="flex justify-content-center md:justify-content-end mt-8">
-                        <img src="" alt="CLINICA" className="w-9 md:w-auto" />
+                        <img src="" alt="COLEGIO.PNG" className="w-9 md:w-auto" />
                     </div>
                 </div>
 
@@ -69,7 +69,7 @@ const Dashboard = () => {
                             </div>
                             <h2 className="line-height-1 text-900 text-4xl font-normal">Sistema de escritorio</h2>
                             <span className="text-700 text-2xl line-height-3 mr-0 md:mr-2" style={{ maxWidth: '650px' }}>
-                                Nuestro sistema de gestión de clínicas es de escritorio y funciona en cualquier navegador sin necesidad de descargar software adicional.
+                                Nuestro sistema de gestión administrativa es de escritorio y funciona en cualquier navegador sin necesidad de descargar software adicional.
                             </span>
                         </div>
 
@@ -89,7 +89,7 @@ const Dashboard = () => {
                             </div>
                             <h2 className="line-height-1 text-900 text-4xl font-normal">Diseño responsive</h2>
                             <span className="text-700 text-2xl line-height-3 ml-0 md:ml-2" style={{ maxWidth: '650px' }}>
-                                Con nuestro sistema de gestión de clínica, ahora puede acceder desde cualquier dispositivo con conexión a Internet, incluyendo su teléfono celular. Nuestro sistema es completamente responsive y está diseñado para adaptarse a cualquier tamaño de pantalla.
+                                Con nuestro sistema de gestión administrativa, ahora puede acceder desde cualquier dispositivo con conexión a Internet, incluyendo su teléfono celular. Nuestro sistema es completamente responsive y está diseñado para adaptarse a cualquier tamaño de pantalla.
                             </span>
                         </div>
                     </div>
