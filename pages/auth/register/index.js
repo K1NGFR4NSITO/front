@@ -31,9 +31,9 @@ const RegisterPage = () => {
     const [rol, setDropdownItem] = useState('');
     const dropdownItems = [
         { name: 'Administrador', value: 'administrador' },
-        { name: 'Recepcionista', value: 'recepcionista' },
-        { name: 'Medico', value: 'medico' },
-        { name: 'Farmaceutico', value: 'farmaceutico' }
+        { name: 'Secretaria', value: 'recepcionista' },
+        { name: 'Profesor', value: 'medico' },
+        { name: 'Estudiante', value: 'farmaceutico' }
     ];
 
 
