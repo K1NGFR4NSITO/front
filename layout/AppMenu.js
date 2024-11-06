@@ -120,7 +120,7 @@ const AppMenu = () => {
                 {
                     label: 'Home',
                     items: [{ label: 'Inicio', icon: 'pi pi-fw pi-home', to: '/' }]
-                },
+                }/*,
                 {
                     label: 'Pacientes',
                     items: [
@@ -139,13 +139,13 @@ const AppMenu = () => {
                     items: [
                         { label: 'Ver medicamentos disponibles', icon: 'pi pi-fw pi-list', to: '/farmproductos/listarProductos' },
                     ]
-                }
+                }*/
             ],
             recepcionista: [
                 {
                     label: 'Home',
                     items: [{ label: 'Inicio', icon: 'pi pi-fw pi-home', to: '/' }]
-                },
+                }/*,
                 {
                     label: 'Pacientes',
                     items: [
@@ -169,13 +169,13 @@ const AppMenu = () => {
                         { label: 'Ver medicamentos disponibles', icon: 'pi pi-fw pi-list', to: '/farmproductos/listarProductos' },
                     ]
 
-                }
+                }*/
             ],
             farmaceutico: [
                 {
                     label: 'Home',
                     items: [{ label: 'Inicio', icon: 'pi pi-fw pi-home', to: '/' }]
-                },
+                }/*,
                 {
                     label: 'Pacientes',
                     items: [
@@ -220,7 +220,7 @@ const AppMenu = () => {
                             ]
                         }
                     ]
-                },
+                }*/,
             ]
         };
         setModel(roles[userRole] || []);
