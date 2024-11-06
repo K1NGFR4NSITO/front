@@ -387,7 +387,7 @@ const Pacientes = () => {
         doc.text(title, 10, 10);
 
         // Párrafo introductorio
-        const introText = 'A continuación se presenta un informe detallado de los pacientes registrados en nuestra aplicación. El informe incluye información relevante sobre cada paciente, como sus nombres, apellidos, fecha de nacimiento, telefono, y el correo.';
+        const introText = 'A continuación se presenta un informe detallado de los estudiantes registrados en nuestra aplicación. El informe incluye información relevante sobre cada estudiante, como sus nombres, apellidos, fecha de nacimiento, telefono, y el correo.';
         //y la ciudad en la reside
         const splitIntroText = doc.splitTextToSize(introText, doc.internal.pageSize.getWidth() - 20);
         doc.setFontSize(12);
@@ -508,14 +508,14 @@ const Pacientes = () => {
                         <div className="grid">
                             <div className="col-12 md:col-6">
                                 <div className="field">
-                                    <label htmlFor="nombresPaciente">Nombres del paciente</label>
+                                    <label htmlFor="nombresPaciente">Nombres del estudiante</label>
                                     <InputText id="nombres" name="nombres" value={paciente.nombres} onChange={onInputChange} required autoFocus />
 
                                 </div>
                             </div>
                             <div className="col-12 md:col-6">
                                 <div className="field">
-                                    <label htmlFor="apellidosPaciente">Apellidos del paciente</label>
+                                    <label htmlFor="apellidosPaciente">Apellidos del estudiante</label>
                                     <InputText id="apellidos" name="apellidos" value={paciente.apellidos} onChange={onInputChange} required autoFocus />
 
                                 </div>
@@ -523,7 +523,7 @@ const Pacientes = () => {
                         </div>
 
                         <div className="field">
-                            <label htmlFor="fecha_nacimiento">Fecha de nacimiento del paciente</label>
+                            <label htmlFor="fecha_nacimiento">Fecha de nacimiento del estudiante</label>
                             <Calendar
                                 id="fecha_nacimiento"
                                 name="fecha_nacimiento"
@@ -536,7 +536,7 @@ const Pacientes = () => {
                             />
                         </div>
                         <div className="field">
-                            <label htmlFor="sexo">Genero del paciente</label>
+                            <label htmlFor="sexo">Genero del estudiante</label>
                             <Dropdown id="categoria" value={paciente.sexo} onChange={(e) => setPaciente({ ...paciente, sexo: e.target.value })} options={sexoDropdown} placeholder="Seleccione un genero" />
 
                         </div>
@@ -551,7 +551,7 @@ const Pacientes = () => {
                             </div>
                             <div className="col-12 md:col-6">
                                 <div className="field">
-                                    <label htmlFor="telefono">Telefono del paciente</label>
+                                    <label htmlFor="telefono">Telefono del estudiante</label>
                                     <InputNumber id="telefono" name="telefono" value={paciente.telefono} onValueChange={onInputChange} useGrouping={false} />
 
                                 </div>
@@ -559,7 +559,7 @@ const Pacientes = () => {
                         </div>
 
                         <div className="field">
-                            <label htmlFor="correo_electronico">Correo electronico del paciente</label>
+                            <label htmlFor="correo_electronico">Correo electronico del estudiante</label>
                             <InputText id="correo_electronico" name="correo_electronico" value={paciente.correo_electronico} onChange={onInputChange} required autoFocus />
 
                         </div>
@@ -590,13 +590,13 @@ const Pacientes = () => {
                                 <div className="col-12 md:col-4">
                                     <div className="field">
                                         <label htmlFor="zona">Zona</label>
-                                        <InputText id="zona" name="zona" value={paciente.zona} onChange={(e) => setPaciente({ ...paciente, zona: e.target.value })} placeholder="Escriba la zona del paciente" />
+                                        <InputText id="zona" name="zona" value={paciente.zona} onChange={(e) => setPaciente({ ...paciente, zona: e.target.value })} placeholder="Escriba la zona del estudiante" />
                                     </div>
                                 </div>
                                 <div className="col-12 md:col-4">
                                     <div className="field">
                                         <label htmlFor="calle">Calle</label>
-                                        <InputText id="calle" name="calle" value={paciente.calle} onChange={(e) => setPaciente({ ...paciente, calle: e.target.value })} placeholder="Escriba la calle donde vive el paciente" />
+                                        <InputText id="calle" name="calle" value={paciente.calle} onChange={(e) => setPaciente({ ...paciente, calle: e.target.value })} placeholder="Escriba la calle donde vive el estudiante" />
                                     </div>
                                 </div>
                             </div>
