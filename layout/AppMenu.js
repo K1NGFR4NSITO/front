@@ -27,8 +27,17 @@ const AppMenu = () => {
                     items: [
                         { label: 'Registro de estudiantes', icon: 'pi pi-fw pi-user-plus', to: '/pacientes/nuevoPaciente' },
                         { label: 'Actualizar estudiantes', icon: 'pi pi-fw pi-pencil', to: '/pacientes/actualizarPaciente' },
-                        { label: 'Asistencia', icon: 'pi pi-fw pi-pencil', to: '/asistencia/asistencia' }
-                      /*  { label: 'Busqueda de estudiantes', icon: 'pi pi-fw pi-folder-open', to: '/pacientes/historiaClinica' }*/
+                        //{ label: 'Asistencia', icon: 'pi pi-fw pi-pencil', to: '/asistencia/asistencia' },
+                        { label: 'Busqueda de estudiantes', icon: 'pi pi-fw pi-folder-open', to: '/pacientes/historiaClinica' }
+                    ]
+                },
+                {
+                    label: 'Maestros',
+                    items: [
+                        { label: 'Registro de maestros', icon: 'pi pi-fw pi-user-plus', to: '/pacientes2/nuevoPaciente2' },
+                        { label: 'Actualizar maestros', icon: 'pi pi-fw pi-pencil', to: '/pacientes2/actualizarPaciente2' },
+                        //{ label: 'Asistencia', icon: 'pi pi-fw pi-pencil', to: '/asistencia/asistencia' }
+                        //{ label: 'Busqueda de estudiantes', icon: 'pi pi-fw pi-folder-open', to: '/pacientes/historiaClinica' }
                     ]
                 },
                 /*{

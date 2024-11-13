@@ -15,13 +15,17 @@ export async function registrar(nombres, apellidos, ci, fecha_nacimiento, sexo, 
     }
 }
 
-export async function registrarHistoriaClinica(id_paciente, motivo_consulta, enfermedad_actual, antecedentes, diagnostico_cie, diagnostico_medico, tratamiento, observaciones, presion_arterial, peso, talla, temperatura_corporal, frecuencia_respiratoria, frecuencia_cardiaca, saturacion_oxigeno, examen_fisico_general, examen_piel) {
+export async function registrarHistoriaAcademica(id_paciente, trimestre, materia_1, materia_2, materia_3, materia_4, materia_5, materia_6, materia_7, materia_8, materia_9, materia_10, observaciones, estado) {
     try {
-
-        const response = await axios.post(`${BASE_URL}/pacientes/registrarHistoriaClinica`, { id_paciente, motivo_consulta, enfermedad_actual, antecedentes, diagnostico_cie, diagnostico_medico, tratamiento, observaciones, presion_arterial, peso, talla, temperatura_corporal, frecuencia_respiratoria, frecuencia_cardiaca, saturacion_oxigeno, examen_fisico_general, examen_piel });
+        const response = await axios.post(`${BASE_URL}/pacientes/registrarHistoriaAcademica`, {
+            id_paciente,
+            trimestre,
+            materia_1, materia_2, materia_3, materia_4, materia_5,
+            materia_6, materia_7, materia_8, materia_9, materia_10,
+            observaciones, estado
+        });
         return response.data;
-    }
-    catch (error) {
+    } catch (error) {
         throw error;
     }
 }
@@ -70,15 +74,15 @@ export async function mostrarPacientes() {
     }
 }
 
-export async function mostrarHistoriaClinica(id) {
+export async function mostrarHistoriaAcademica(id_paciente) {
     try {
-        const response = await axios.get(`${BASE_URL}/pacientes/historiaClinica/${id}`);
+        const response = await axios.get(`${BASE_URL}/pacientes/historiaAcademica/${id_paciente}`);
         return response.data;
-    }
-    catch (error) {
+    } catch (error) {
         throw error;
     }
 }
+
 
 export async function mostrarEvolucionPaciente(id) {
     try {
